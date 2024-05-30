@@ -1,0 +1,9 @@
+/*eslint keyword-spacing: ["error", { "before": true }]*/
+
+if (foo) {
+    //...
+}else if (bar) {
+    //...
+}else {
+    //...
+}

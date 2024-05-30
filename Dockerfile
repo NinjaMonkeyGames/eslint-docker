@@ -1,0 +1,22 @@
+# IF ANY CHANGES ARE MADE TO THIS FILE THE DOCKER CONTAINER ON DOCKERHUB MUST ALSO BE UPDATED WITH THE NEW BUILD!
+
+# USE ALPINE LINUX O/S AS BASE IMAGE
+
+FROM alpine:latest
+
+# SET THE WORKING DIRECTORY FOR THE CONTAINER
+
+WORKDIR /app
+
+# INSTALL NODE.JS
+
+RUN apk add --update nodejs npm
+
+# INSTALL ESLINT
+
+RUN npm install eslint -g
+
+# INCLUDE 'eslint.config.mjs' IN DOCKER BUILD
+
+COPY eslint.config.mjs ./eslint.config.mjs
+
