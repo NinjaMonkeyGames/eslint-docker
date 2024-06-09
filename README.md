@@ -14,13 +14,13 @@ There is a '.eslint.config.mjs' file containing the eslint configuration in the 
 use the following YAML line to copy this into your project directory.
 
 ```shell
-cp /app/.stylelintrc $GITHUB_WORKSPACE
+cp /app/eslint.config.mjs $GITHUB_WORKSPACE
 ```
 
 Alternately you can use the following command to use your own configuration file.
 
 ```shell
-run: stylelint --config-basedir .eslint.config.mjs .
+run: eslint -c eslint.config.mjs .
 ```
 
 See links below for more information about ESLint and Alpine Linux.
@@ -81,6 +81,7 @@ This project uses a sequential versioning system.
 |----------------|-----------------------------------------------------------------------------------------------------|
 | 0.0.0.0        | Base files included.                                                                                |
 | 0.0.0.1        | Updated 'READEME.md' to align with the layout of the other linter projects.                         |
+| 0.0.0.2        | Fixed a number of incorrect comments and 'README.md' information.                                   |
 ---
 
 ## Contact information ##
@@ -94,7 +95,7 @@ If you have any problems with the repository or have any suggestions please cont
 
 You may also contact us via our [website](https://ninjamonkeygames.com).
 
-Any bugs should be raised as an [issue](https://github.com/NinjaMonkeyGames/stylelint-docker/issues) on GitHub.
+Any bugs should be raised as an [issue](https://github.com/NinjaMonkeyGames/eslint-docker/issues) on GitHub.
 
 ---
 
