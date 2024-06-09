@@ -82,6 +82,7 @@ This project uses a sequential versioning system.
 | 0.0.0.0        | Base files included.                                                                                |
 | 0.0.0.1        | Updated 'READEME.md' to align with the layout of the other linter projects.                         |
 | 0.0.0.2        | Fixed a number of incorrect comments and 'README.md' information.                                   |
+| 0.0.0.3        | Added --color option to ESLint output text.                                                         |
 ---
 
 ## Contact information ##
