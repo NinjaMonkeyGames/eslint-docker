@@ -5,9 +5,9 @@ export default
 
         rules: 
         {
-            semi: "error",                  // Enfore semi-colons at end of statements.
-            "prefer-const": "error",        // Report misuse of contants.
-            "strict": ["error", "global"]   // Enable reporting of strict violations as errors globaly.
+            semi: "error",                  // Enforce semi-colons at end of statements.
+            "prefer-const": "error",        // Report misuse of contents.
+            "strict": ["error", "global"]   // Enable reporting of strict violations as errors globally.
         },
 
         // LANGUAGE STANDARD OPTIONS

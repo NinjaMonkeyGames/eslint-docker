@@ -2,21 +2,17 @@
 
 # USE ALPINE LINUX O/S AS BASE IMAGE
 
-FROM alpine:latest
+FROM alpine:3.20.0
+
+# INSTALL NODE.JS AND ESLINT
+
+RUN apk add --no-cache nodejs=20.13.1-r0 npm=10.8.0-r0 && \
+    npm install eslint@9.3.0 -g
 
 # SET THE WORKING DIRECTORY FOR THE CONTAINER
 
 WORKDIR /app
 
-# INSTALL NODE.JS
-
-RUN apk add --update nodejs npm
-
-# INSTALL ESLINT
-
-RUN npm install eslint -g
-
 # INCLUDE 'eslint.config.mjs' IN DOCKER BUILD
 
 COPY eslint.config.mjs ./eslint.config.mjs
-
