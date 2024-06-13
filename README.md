@@ -2,9 +2,9 @@
 
 ## What is this repository for? ##
 
-The purpose of this repository is to maintain control over versions of eslint. This maintains uniformity-
-when enforcing coding standards and formatting rules. This allows for easier upgrades and prevents newer versions from
-breaking the pipeline.
+The purpose of this repository is to maintain control over versions of ESLint. This maintains uniformity when enforcing
+coding standards and formatting rules. This allows for easier upgrades and prevents newer versions from breaking the
+pipeline.
 
 ---
 
@@ -43,8 +43,7 @@ See links below for more information about ESLint and Alpine Linux.
   * **Alpine source pull address:**   docker pull alpine:3.20.0
 
     **ESLint website**          <https://eslint.org/>
-    **NPM ESLint**              <https://www.npmjs.com/package/eslint>
-    **Github ESLint**           <https://github.com/eslint/eslint>
+    **GitHub ESLint**           <https://github.com/eslint/eslint>
     **VSC Plugin:**             <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>
 
 ---
@@ -62,8 +61,9 @@ See links below for more information about ESLint and Alpine Linux.
 
 | File Or Folder Name:                  | Files | Description Of File Or Folder Contents                               |
 |---------------------------------------|-------|----------------------------------------------------------------------|
-| > css-fail                            |   49  | Contains examples of every possible CSS error.                       |
+| > css-fail                            |   49  | Contains examples of every possible javascript error.                |
 | .eslint.config.mjs                    |   1   | Contains JavaScript rule configuration.                              |
+| > .git                                |   54  | Contains git configuration files.                                    |
 | > .github > workflows > pipeline.yml  |   1   | Lints all JavaScript files in docker.                                |
 | dockerfile                            |   1   | Information on how to build docker.                                  |
 | README.md                             |   1   | Contains information about the project.                              |
@@ -83,6 +83,8 @@ This project uses a sequential versioning system.
 | 0.0.0.1        | Updated 'READEME.md' to align with the layout of the other linter projects.                         |
 | 0.0.0.2        | Fixed a number of incorrect comments and 'README.md' information.                                   |
 | 0.0.0.3        | Added --color option to ESLint output text.                                                         |
+| 0.0.0.4        | Internal adjustment to make the project structure consistent across all repositories in the project.|
+
 ---
 
 ## Contact information ##
